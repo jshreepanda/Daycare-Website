@@ -1,0 +1,438 @@
+:root {
+  --primary: #44968F;
+  --secondary: #F5CC16;
+  --tertiray: #CF5C36;
+  --bodybg: #EEE5E9;
+  --aqua: #80c3d3;
+  --orange: orange;
+  --green: #88c87a;
+  --white: #ffffff;
+  --yellow: (var(--secondary));
+  --lightgrey: #eaeaea;
+  --body-text: #666666;
+  --slate-blue: slateblue;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--body-text);
+  padding-top: 65px;
+}
+
+/* Common styles starts here */
+section {
+  padding: 100px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+.btn,
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
+}
+
+.accordion-button:focus,
+.accordion-button:focus-visible {
+  outline: 0!important;
+}
+
+.btn:hover{
+  background-color: var(--slate-blue);
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.sub-heading {
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heading {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-bold {
+  width: 100px;
+}
+
+/* Colors defined here */
+.teal-text {
+  color: var(--primary);
+}
+
+.black-text {
+  color: var(--tertiray);
+}
+
+.orange-text {
+  color: var(--secondary);
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.bg-aqua {
+  background-color: var(--aqua);
+}
+
+.bg-yellow {
+  background-color: var(--secondary);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-slateblue {
+  background-color: var(--slate-blue);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-lightgrey {
+  background-color: var(--lightgrey);
+}
+
+.bg-footer {
+  background-color: var(--bodybg);
+}
+
+/* Header starts here */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 10;
+}
+
+.navbar-brand{
+  display: block;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+header li a{
+  font-family:'Baloo Chettan 2', cursive;
+}
+
+@media (max-width: 850px) {
+  .heading {
+    font-size: 35px;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+  }
+}
+
+.navbar-nav .nav-item a {
+  color: var(--white);
+}
+
+.navbar-nav .nav-item .active{
+  color:var(--lightgrey);
+}
+
+/* Hero section starts here */
+.hero {
+  height: 100vh;
+}
+
+.my-hero-bg {
+  background-image: url(../images/hero-daycare-kids.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 200px) center;
+  background-size: 720px;
+}
+
+@media (max-width: 1450px) {
+  .my-hero-bg {
+    background-position: calc(100% - 20px) center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .my-hero-bg {
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .my-hero-bg {
+    background-position: center bottom;
+    background-size: 60%;
+  }
+  .hero-text {
+    align-items: flex-start !important;
+    text-align: center;
+  }
+}
+
+
+/* About section starts here */
+.about img {
+  margin: 35px 0;
+}
+
+.about-bottom{
+  position: relative;
+}
+
+
+/* Why us section starts here */
+@media (max-width: 800px) {
+  .why_us .row > div {
+    margin-bottom: 30px;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.front-img  {
+  display: block;
+  z-index: 1;
+  animation: bouncing 1s ease-in-out infinite ;
+}
+.front-img1 {
+  animation-delay: 0s;
+}
+.front-img2 {
+  animation-delay: 200ms;
+}
+.front-img3 {
+  animation-delay: 400ms;
+}
+.front-img4 {
+  animation-delay: 350ms;
+}
+
+.circle{
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width:120%;
+  height:120%;
+}
+
+/* Events section starts here */
+.events {
+  background-color: var(--secondary);
+}
+
+/* Testimonials section starts here */
+.testimonials {
+  background-image: url(../images/blob.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: url(../images/icons/Icon\ material-navigate-next.svg);
+  width: 2rem;
+  height: 4rem;
+}
+
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+
+/* ---------------About page style starts here------------------ */
+.about-top{
+  padding: 0;
+  height: 650px;
+}
+
+.about-top video {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---------------Events page style starts here------------------ */
+.card-image {
+  overflow: hidden;
+}
+
+.iconparent {
+  position: relative;
+}
+
+.iconparent:before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 72px;
+  background-color: red;
+  position: absolute;
+  left: 20%;
+  top: 20px;
+  background: url('../images/swirl.png') no-repeat;
+  animation: tilting 6s ease-in-out infinite;
+}
+
+.iconparent:after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 56px;
+  background-color: red;
+  position: absolute;
+  right: 20%;
+  background: url('../images/musicnote.png') no-repeat;
+  animation: tilting 4s ease-in-out infinite;
+}
+
+@media (max-width: 800px) {
+  .iconparent:before,
+  .iconparent:after {
+    display: none;
+  }
+}
+
+.events-gallery .card .card-body h5 {
+  transition: color 0.3s ease-in-out;
+}
+
+.events-gallery .card .card-img-top {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.events-gallery .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.events-gallery .card:hover .card-body h5 {
+  color: var(--tertiray);
+}
+
+@media (max-width: 995px) {
+  .nopad995 {
+    padding: 10px!important;
+  }
+}
+
+
+
+
+/* Animations start here */
+.bus {
+  position: absolute;
+  bottom: -36px;
+  right: 0;
+  width: 200px;
+  display: block;
+  animation: travel 15s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes travel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50vw);
+  }
+}
+
+@keyframes tilting {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Monkey animation starts here */
+.backToTop {
+  width: 74px;
+  height: 189px;
+  background-image: url(../images/monkey-top-01.png);
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  z-index: 3;
+  transform: translateY(-1000px);
+  transition: transform 1s ease-in;
+}
+
+.backToTop:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 504px;
+  background: var(--tertiray);
+  position: absolute;
+  top: -484px;
+  left: 48px;
+  border: 2px dashed var(--lightgrey);
+}
+
+.backToTop.show {
+  transform: translateY(0);
+}
